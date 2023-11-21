@@ -6,7 +6,7 @@ services:
       context: .
       args:
         TZ: 'America/New_York'
-    container_name: QuantaTrack
+    container_name: TrevGames
     environment:
       TZ: 'America/New_York'
     ports:
