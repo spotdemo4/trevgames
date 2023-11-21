@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  trevgames:
+    build:
+      context: .
+      args:
+        TZ: 'America/New_York'
+    container_name: QuantaTrack
+    environment:
+      TZ: 'America/New_York'
+    ports:
+      - '3863:3000'
+    restart: unless-stopped
